@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="healthstyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="head">Food Timetable</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="day.html">Day</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
+        <h1 id="head1">Welcome to Health</h1>
+    </header>
+    
+    <!-- <div class="matrix-container">
+        <h1 class="matrix-text" data-text="MATRIX">MATRIX</h1>
+        <div class="rain"></div>
+    </div> -->
+
+    <section id="day">
+        <!-- <button class="daily" role="button" onclick="location.href='day.html'">
+            <h2>Daily Timetable</h2>
+            
+        </button> -->
+        
+        
+    </section>
+    <section id="fitness" class="section-box">
+        <h2>How Crucial is Fitness for Health?</h2>
+        <p class="para">Fitness plays a vital role in maintaining overall health. Regular exercise strengthens the heart, improves mental health, and boosts immunity.</p>
+        <button class="fit" onclick="showFitnessTips()">Show Fitness Tips</button>
+        <div id="fitnessTips">
+            <div id="li">Exercise for at least 30 minutes daily.</div>
+            <div id="li">Stay hydrated and eat nutritious food.</div>
+            <div id="li">Get enough sleep to recover.</div>
+            <div id="li">Practice mindfulness and reduce stress.</div>
+        </div>
+    </section>
+    
+    <section id="mental-health" class="section-box">
+        <h2>Mental Health and Well-Being</h2>
+        <p class="para">Mental health is as important as physical health. Practicing mindfulness, engaging in social activities, and seeking help when needed are crucial for a balanced life.</p>
+    </section>
+    
+    <section id="stories" class="section-box">
+        <h2>User Stories</h2>
+        <div id="storyContainer"></div>
+        <div class="story-form">
+            <textarea id="storyInput" placeholder="  Share your story..."></textarea>
+            <br>
+            <button onclick="addStory()">Submit</button>
+        </div>
+    </section>
+    
+    <script>
+        function showFitnessTips() {
+            let tips = document.getElementById("fitnessTips");
+            tips.style.display = tips.style.display === "flex" ? "none" : "flex";
+        }
+
+        function addStory() {
+            let storyText = document.getElementById("storyInput").value;
+            if (storyText.trim() !== "") {
+                let storyDiv = document.createElement("div");
+                storyDiv.classList.add("story");
+                storyDiv.innerText = storyText;
+                document.getElementById("storyContainer").appendChild(storyDiv);
+                document.getElementById("storyInput").value = "";
+                
+                setTimeout(() => {
+                    storyDiv.classList.add("visible");
+                }, 100);
+            }
+        }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
