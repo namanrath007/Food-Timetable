@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 247, 253);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('pic2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    text-align: center;
+    cursor: pointer;
+}
+
+#head{
+    margin: 0px 820px 0px 0px;
+    /* color: white; */
+    color: #FFA500;
+    font-size: 35px;
+    font-family:'Ramaraja', sans-serif;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    margin: -10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 20px 0px 0px 0px;
+    margin: 15px 25px 25px 0px;
+}
+
+nav ul li a {
+    /* color: white; */
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav ul li a:hover {
+    /* color: white; */
+    color: #ffee00;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+#home{
+    margin: 0px 0px 0px 0px;
+    padding: 180px 0px 0px 0px;
+    /* color: #FFA500; */
+    color: #FF5C00;
+}
+
+#head1{
+    font-size: 100px;
+    margin: 80px 0px 0px 0px;
+    /* border: 10px solid black; */
+    /* transition: text-shadow .20s,transform .20s; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+#head1:hover{
+    text-shadow: rgba(45, 35, 66, .4) 10px 4px 8px, rgba(45, 35, 66, .3) 10px 7px 13px -3px, rgba(45, 35, 66, .3) 10px -3px 0 inset;
+    transform: translateY(-2px);
+    font-size: 105px;
+}
+
+/* .matrix-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2; 
+  }
+  
+  .matrix-text {
+    color: #0f0;
+    font-size: 80px;
+    font-family: monospace;
+    position: relative;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+    z-index: 2; 
+  }
+  
+  .matrix-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: glitch 2s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-2px, -2px);
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0;
+  }
+  
+  .rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 0, 0.1) 0,
+      rgba(0, 255, 0, 0.2) 2px,
+      transparent 4px
+    );
+    animation: rain 10s linear infinite;
+    z-index: 1; 
+  }
+  
+
+  @keyframes rain {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  
+  @keyframes glitch {
+    0%, 100% {
+      clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+      transform: translate(0);
+    }
+    33% {
+      clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+      transform: translate(-5px, -5px);
+    }
+    66% {
+      clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+      transform: translate(5px, 5px);
+    }
+  } */
+
+section {
+    padding: 100px 20px;
+    margin-top: 15px;
+}
+
+/* #daily{
+    border-radius: 60px;
+    border: 3px solid black;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFA500;
+    cursor: pointer;
+} */
+
+/* #daily:hover{
+    color: #FFA500;
+    border: 1px solid #FFA500;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+
+} */
+
+
+.daily {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 20px 16px 20px 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.daily:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.daily:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.daily:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px 10px 0px;
+  }
+
+  nav ul li {
+    margin: 0px 0;
+    /* padding: 0px 0px 0px 4px; */
+  }
+  nav ul li a {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+
+  #head {
+    margin: 8px 12px 0px 4px;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #head1 {
+    font-size: 80px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #head1:hover {
+    font-size: 42px;
+  }
+
+  header#home {
+    padding-top: 120px;
+  }
+
+  section {
+    padding: 50px 10px 0px 10px;
+  }
+
+  .daily {
+    width: 90%;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+  }
+}
+
+

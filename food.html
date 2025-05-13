@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foodstyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="head">Food Timetable</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="day.html">Day</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
+        <h1 id="head1">Welcome to the Food</h1>
+    </header>
+    
+    <!-- <div class="matrix-container">
+        <h1 class="matrix-text" data-text="MATRIX">MATRIX</h1>
+        <div class="rain"></div>
+    </div> -->
+
+    <!-- <section id="day">
+        <button class="daily" role="button" onclick="location.href='day.html'">
+            <h2>Daily Timetable</h2>
+            
+        </button>
+        
+        
+    </section> -->
+
+    <!-- <section id="mexican-vlogs">
+        <h2 class="vlog-heading">Tasty Mexican Food Vlogs</h2>
+        <div class="vlog-container">
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?tacos" alt="Mexican Tacos">
+                <h3>Street-Style Tacos</h3>
+                <p>Explore authentic street tacos filled with spicy meat and fresh toppings.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?burrito" alt="Burrito">
+                <h3>Burrito Bonanza</h3>
+                <p>Watch the making of delicious overstuffed burritos in a family-run eatery.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?nachos" alt="Nachos">
+                <h3>Cheesy Nacho Nights</h3>
+                <p>Loaded nachos, salsa dips, and jalapeños—this vlog is a spicy ride!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="chinese-vlogs">
+        <h2 class="vlog-heading">Savory Chinese Food Vlogs</h2>
+        <div class="vlog-container">
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?noodles" alt="Noodles">
+                <h3>Sizzling Stir-Fried Noodles</h3>
+                <p>Watch chefs stir up magic with sizzling woks and fresh ingredients.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?dimsum" alt="Dimsum">
+                <h3>Dim Sum Delights</h3>
+                <p>Experience the beauty and taste of bite-sized steamed dumplings.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?kung-pao-chicken" alt="Kung Pao Chicken">
+                <h3>Kung Pao Kitchen</h3>
+                <p>Spicy chicken tossed with peanuts and veggies—fast, fun, flavorful.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="american-vlogs">
+        <h2 class="vlog-heading">Classic American Food Vlogs</h2>
+        <div class="vlog-container">
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?burger" alt="Burger">
+                <h3>Gourmet Burgers</h3>
+                <p>From beefy giants to veggie stacks, feast on juicy American burgers.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?bbq" alt="BBQ">
+                <h3>Backyard BBQ Bash</h3>
+                <p>Slow-cooked meats, smoky sauces—this BBQ vlog is a flavor bomb.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?pancakes" alt="Pancakes">
+                <h3>Pancake Paradise</h3>
+                <p>Sweet syrup, fluffy stacks, and butter melting in slow motion. Yum!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="indian-vlogs">
+        <h2 class="vlog-heading">Flavors of India - Food Vlogs</h2>
+        <div class="vlog-container">
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?indian-thali" alt="Indian Thali">
+                <h3>Royal Indian Thali</h3>
+                <p>A complete traditional platter with curries, rotis, rice, and desserts from every region.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?street-food-india" alt="Indian Street Food">
+                <h3>Spicy Street Food</h3>
+                <p>From chaats to vada pavs, dive into the streets of India packed with flavors and colors.</p>
+            </div>
+            <div class="vlog-card">
+                <img src="https://source.unsplash.com/400x250/?biryani" alt="Biryani">
+                <h3>Biryani Binge</h3>
+                <p>Watch chefs layering rice and masala to create India’s most iconic dish – Biryani!</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Indian -->
+  <section id="indian-vlogs">
+    <h2 class="vlog-heading">Flavors of India - Food Vlogs</h2>
+    <div class="vlog-container">
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Royal Indian Thali</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?indian-thali" alt="Indian Thali" />
+          <p>A complete traditional platter with curries, rotis, rice, and desserts from every region.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Spicy Street Food</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?street-food-india" alt="Indian Street Food" />
+          <p>From chaats to vada pavs, dive into the streets of India packed with flavors and colors.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Biryani Binge</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?biryani" alt="Biryani" />
+          <p>Watch chefs layering rice and masala to create India’s most iconic dish – Biryani!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chinese -->
+  <section id="chinese-vlogs">
+    <h2 class="vlog-heading">Taste of China - Food Vlogs</h2>
+    <div class="vlog-container">
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Dim Sum Diaries</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?dim-sum" alt="Dim Sum" />
+          <p>Explore bite-sized delights like dumplings, buns, and rolls straight from the streets of Beijing.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Wok This Way</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?chinese-wok" alt="Chinese Wok" />
+          <p>Stir-fry magic! Watch street chefs master the wok with sizzling sauces and high flames.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Noodle Adventures</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?chinese-noodles" alt="Chinese Noodles" />
+          <p>Slurp through handmade noodles from Sichuan to Shanghai, each with its own spicy twist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mexican -->
+  <section id="mexican-vlogs">
+    <h2 class="vlog-heading">Sabor de México - Food Vlogs</h2>
+    <div class="vlog-container">
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Taco Trail</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?tacos" alt="Tacos" />
+          <p>Journey through local taquerias and discover tacos al pastor, carnitas, and more!</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Spicy & Saucy</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?mexican-salsa" alt="Mexican Salsa" />
+          <p>Watch vibrant salsas being made with roasted chilis and fresh herbs in bustling markets.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Tamale Time</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?tamales" alt="Tamales" />
+          <p>From banana-leaf to corn-husk wrapped, dive into the delicious world of traditional tamales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- American -->
+  <!-- <section id="american-vlogs">
+    <h2 class="vlog-heading">Classic American Bites - Food Vlogs</h2>
+    <div class="vlog-container">
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Burger Bonanza</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?burger" alt="Burger" />
+          <p>Explore mouth-watering burgers, from backyard grills to gourmet stacked towers.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Barbecue Battles</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?bbq" alt="BBQ" />
+          <p>Slow-smoked ribs, brisket, and pulled pork take center stage in this smoky showdown.</p>
+        </div>
+      </div>
+      <div class="vlog-card">
+        <h3 onclick="toggleCard(this)">Dessert Drive</h3>
+        <div class="vlog-content">
+          <img src="https://source.unsplash.com/400x250/?american-dessert" alt="Desserts" />
+          <p>Indulge in apple pies, cheesecakes, and brownies fresh out of the oven.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+    
+  <script>
+    function toggleCard(heading) {
+      const card = heading.parentElement;
+      card.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

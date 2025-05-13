@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 247, 253);
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background: url("health.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: white; */
+  text-align: center;
+  cursor: pointer;
+}
+
+#head {
+  margin: 0px 820px 0px 0px;
+  /* color: white; */
+  color: #ff3036;
+  font-size: 35px;
+  font-family: "Ramaraja", sans-serif;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
+    1px 1px 1px #000;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0px 0px;
+  position: fixed;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  margin: -10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 20px 0px 0px 0px;
+  margin: 15px 25px 25px 0px;
+}
+
+nav ul li a {
+  /* color: white; */
+  color: #ff3036;
+  text-decoration: none;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
+    1px 1px 1px #000;
+}
+
+nav ul li a:hover {
+  /* color: white; */
+  color: rgb(255, 108, 113);
+  text-decoration: none;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
+    1px 1px 1px #000;
+}
+
+#home {
+  margin: 0px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
+  /* color: #FFA500; */
+  color: #780606;
+}
+
+#head1 {
+  font-size: 85px;
+  margin: 50px 0px 0px 0px;
+  /* border: 10px solid black; */
+  /* transition: text-shadow .20s,transform .20s; */
+  transition-duration: 1s;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
+    1px 1px 1px #000;
+}
+
+#head1:hover {
+  text-shadow: rgba(45, 35, 66, 0.4) 10px 4px 8px,
+    rgba(45, 35, 66, 0.3) 10px 7px 13px -3px,
+    rgba(45, 35, 66, 0.3) 10px -3px 0 inset;
+  transform: translateY(-2px);
+  font-size: 95px;
+}
+
+.section-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px 20px 20px 20px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+  transform: scale(1.05);
+}
+.para {
+  margin: auto;
+  padding: 4px 2px 6px 2px;
+}
+/* .section-box ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 10px;
+} */
+#fitnessTips {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 10px;
+}
+/* .section-box ul li{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    min-width: 200px;
+    text-align: center;
+ }   */
+#li {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.story-form textarea {
+  width: 90%;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.fit {
+  background-color: #ff3036;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+}
+.fit:hover {
+  background-color: rgb(255, 108, 113);
+  margin-bottom: 10px;
+}
+
+.story-form button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3036;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.story-form button:hover {
+  background-color: rgb(255, 108, 113);
+}
+.story {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.story.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  /* html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 247, 253);
+    font-family: "Roboto", sans-serif;
+  } */
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 30px 12px 10px 0px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      padding: 5px 0;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #head {
+      margin: 8px 0 0 0;
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    #home {
+      padding-top: 100px;
+    }
+  
+    #head1 {
+      margin: 20px 0 0 0;
+      font-size: 50px;
+    }
+  
+    #head1:hover {
+      font-size: 55px;
+    }
+  
+    #day {
+      padding-top: 20px;
+    }
+  
+    #fitness {
+      padding-top: 20px;
+    }
+  }
+  
+  #stories {
+    margin: 0px 0px 100px 0px;
+  }

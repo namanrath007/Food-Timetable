@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 247, 253);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('food.jpg');
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+    /* color: white; */
+    text-align: center;
+    cursor: pointer;
+}
+
+#head{
+    margin: 0px 820px 0px 0px;
+    /* color: white; */
+    color: #228B22;
+    font-size: 35px;
+    font-family:'Ramaraja', sans-serif;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    margin: -10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 20px 0px 0px 0px;
+    margin: 15px 25px 25px 0px;
+}
+
+nav ul li a {
+    /* color: white; */
+    color: #228322;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav ul li a:hover {
+    /* color: white; */
+    color: #00ff5e;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+#home{
+    margin: 0px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
+    /* color: #FFA500; */
+    color: #02e054;
+}
+
+#head1{
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
+    /* border: 10px solid black; */
+    /* transition: text-shadow .20s,transform .20s; */
+    transition-duration: 1s;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+#head1:hover{
+    text-shadow: rgba(45, 35, 66, .4) 10px 4px 8px, rgba(45, 35, 66, .3) 10px 7px 13px -3px, rgba(45, 35, 66, .3) 10px -3px 0 inset;
+    transform: translateY(-2px);
+    font-size: 105px;
+}
+
+h2.vlog-heading {
+    font-size: 36px;
+    color: #228b22;
+    text-align: center;
+    margin: 40px 0 20px;
+    text-shadow: 1px 1px 2px #00000050;
+  }
+
+  .vlog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .vlog-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+  }
+
+  .vlog-card h3 {
+    margin: 10px;
+    color: #780606;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .vlog-card h3:hover {
+    color: #ff3036;
+  }
+
+  .vlog-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in-out, padding 0.1s ease;
+  }
+
+  .vlog-content img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  .vlog-card.open .vlog-content {
+    max-height: 500px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0px 10px 0px;
+      margin: 10px 10px 0px 0px;
+      /* margin-top: 20px; */
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      padding: 5px 0;
+    }
+    nav ul li a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #head {
+      margin: 8px 0px 0px 0px;
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
+    #head1 {
+      margin: 50px 0px 0px 0px;
+      font-size: 50px;
+    }
+  
+    #head1:hover {
+      font-size: 55px;
+    }
+  }

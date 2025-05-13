@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 247, 253);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('sat.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: white; */
+    text-align: center;
+    cursor: pointer;
+}
+
+#head{
+    margin: 0px 820px 0px 0px;
+    /* color: white; */
+    color: #FFA500;
+    font-size: 35px;
+    font-family:'Ramaraja', sans-serif;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    margin: -10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 20px 0px 0px 0px;
+    margin: 15px 25px 25px 0px;
+}
+
+nav ul li a {
+    /* color: white; */
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+nav ul li a:hover {
+    /* color: white; */
+    color: #ffee00;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+
+#home {
+  padding-top: 120px;
+  color: #FF5C00;
+}
+
+#head1 {
+  font-size: 80px;
+  transition: text-shadow 0.3s, transform 0.3s, font-size 0.3s;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#head1:hover {
+  text-shadow:
+    rgba(45, 35, 66, 0.4) 10px 4px 8px,
+    rgba(45, 35, 66, 0.3) 10px 7px 13px -3px,
+    rgba(45, 35, 66, 0.3) 10px -3px 0 inset;
+  transform: translateY(-2px);
+  font-size: 85px;
+}
+
+/* Meal Planner Section */
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.save-btn, .edit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    height: 42px;
+    cursor: pointer;
+    color: white;
+}
+
+.save-btn {
+    background-color: #FF5C00;
+}
+
+.save-btn:hover {
+    background-color: #e04b00;
+}
+
+.edit-btn {
+    background-color: #FFA500;
+}
+
+.edit-btn:hover {
+    background-color: #e69500;
+}
+
+.meal-section h3 {
+    font-size: 24px;
+    color: #FF5C00;
+    margin: 0px 654px 10px 0px;
+}
+#break{
+    margin: 0px 625px 10px 0px;
+}
+
+#meal-planner {
+    margin: 20px auto;
+    padding: 13px 30px;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#meal-planner h2 {
+    font-size: 40px;
+    color: #FF5C00;
+    margin-bottom: 20px;
+}
+
+.meal-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
+
+.clear-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .clear-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px 16px 10px 0px;
+      /* margin-top: 20px; */
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      padding: 5px 0;
+    }
+    nav ul li a {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #head {
+      margin: 8px 0px 0px 0px;
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
+    #head1 {
+      margin: 0px 0px 0px 0px;
+      font-size: 50px;
+    }
+  
+    #head1:hover {
+      font-size: 55px;
+    }
+    #meal-planner{
+      width: 60%;
+    }
+    .input-row {
+      flex-direction: column;
+      /* align-items: stretch; */
+    }
+  
+    .input-row input,
+    .save-btn,
+    .edit-btn,
+    .clear-btn {
+      width: 80%;
+      font-size: 12px;
+      height: auto;
+    }
+  
+    .meal-section p {
+      font-size: 16px;
+    }
+  
+    #meal-planner h2 {
+      font-size: 20px;
+    }
+    #meal-planner h3 {
+      font-size: 16px;
+    }
+  }

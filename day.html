@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="daystyle.css">
+</head>
+<body>
+    <script>
+        function toggleMenu() {
+          const nav = document.getElementById('nav-links');
+          nav.classList.toggle('collapsed');
+        }
+    </script>
+    <nav>
+        <ul>
+            <li id="head">Food Timetable</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="day.html">Day</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    
+      
+    <!-- <nav>
+        <div class="navbar-container">
+            <span id="head">Food Timetable</span>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </div>
+        <ul id="nav-links" class="collapsed">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="day.html">Day</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav> -->
+    
+    
+    <header id="home">
+        <h1 id="head1">Welcome to the Day Schedule</h1>
+    </header>
+    
+    <!-- <div class="matrix-container">
+        <h1 class="matrix-text" data-text="MATRIX">MATRIX</h1>
+        <div class="rain"></div>
+    </div> -->
+
+
+    <section id="day">
+        <div class="card">
+            <div class="day-name">Monday</div>
+            <div class="notes">Start fresh!
+                <br>
+            <button class="check" onclick="location.href='mon.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"New week, new goals!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Tuesday</div>
+            <div class="notes">Continue grinding.
+                <br>
+            <button class="check"onclick="location.href='tue.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"Keep the momentum going!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Wednesday</div>
+            <div class="notes">Midweek check-in.
+                <br>
+            <button class="check" onclick="location.href='wed.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"Halfway there!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Thursday</div>
+            <div class="notes">Push forward.
+                <br>
+            <button class="check" onclick="location.href='thurs.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"One step closer!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Friday</div>
+            <div class="notes">Wrap up the week.
+                <br>
+            <button class="check" onclick="location.href='fri.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"Finish strong!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Saturday</div>
+            <div class="notes">Time to relax.
+                <br>
+            <button class="check" onclick="location.href='sat.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"Recharge and refresh!"</div>
+        </div>
+        <div class="card">
+            <div class="day-name">Sunday</div>
+            <div class="notes">Plan for next week.
+                <br>
+            <button class="check" onclick="location.href='sun.html'">Check Schedule</button>
+            </div>
+            <div class="slogan">"Prepare to succeed!"</div>
+        </div>
+    </section>
+    
+    <!-- <script src="script.js"> -->
+        <!-- <script>
+            function toggleMenu() {
+              const nav = document.getElementById('nav-links');
+              nav.classList.toggle('collapsed');
+            }
+        </script> -->
+          
+    <!-- </script> -->
+</body>
+</html>

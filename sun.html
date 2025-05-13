@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Timetable</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sunstyle.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="head">Food Timetable</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="day.html">Day</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="food.html">Food</a></li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <h1 id="head1">Welcome to the Sunday</h1>
+    </header>
+
+    <div id="meal-planner">
+      <h2>Meal Planner</h2>
+
+      <!-- Breakfast Section -->
+      <div class="meal-section">
+        <h3 id="break">🍳 Breakfast</h3>
+        <div class="input-row">
+          <input
+            type="text"
+            id="breakfastInput"
+            placeholder="Enter your breakfast"
+          />
+          <button onclick="saveMeal('breakfast')" class="save-btn">Save</button>
+          <!-- <button onclick="editMeal('breakfast')" class="edit-btn">✏️ Edit</button> -->
+          <button onclick="clearMeal('breakfast')" class="clear-btn">
+            🗑️ Clear
+          </button>
+        </div>
+        <p id="breakfastDisplay"></p>
+      </div>
+
+      <!-- Lunch Section -->
+      <div class="meal-section">
+        <h3>🍛 Lunch</h3>
+        <div class="input-row">
+          <input type="text" id="lunchInput" placeholder="Enter your lunch" />
+          <button onclick="saveMeal('lunch')" class="save-btn">Save</button>
+          <!-- <button onclick="editMeal('lunch')" class="edit-btn">✏️ Edit</button> -->
+          <button onclick="clearMeal('lunch')" class="clear-btn">
+            🗑️ Clear
+          </button>
+        </div>
+        <p id="lunchDisplay"></p>
+      </div>
+
+      <!-- Snack Section -->
+      <div class="meal-section">
+        <h3>🍪 Snack</h3>
+        <div class="input-row">
+          <input type="text" id="snackInput" placeholder="Enter your snack" />
+          <button onclick="saveMeal('snack')" class="save-btn">Save</button>
+          <!-- <button onclick="editMeal('snack')" class="edit-btn">✏️ Edit</button> -->
+          <button onclick="clearMeal('snack')" class="clear-btn">
+            🗑️ Clear
+          </button>
+        </div>
+        <p id="snackDisplay"></p>
+      </div>
+
+      <!-- Dinner Section -->
+      <div class="meal-section">
+        <h3>🍲 Dinner</h3>
+        <div class="input-row">
+          <input type="text" id="dinnerInput" placeholder="Enter your dinner" />
+          <button onclick="saveMeal('dinner')" class="save-btn">Save</button>
+          <!-- <button onclick="editMeal('dinner')" class="edit-btn">✏️ Edit</button> -->
+          <button onclick="clearMeal('dinner')" class="clear-btn">
+            🗑️ Clear
+          </button>
+        </div>
+        <p id="dinnerDisplay"></p>
+      </div>
+    </div>
+
+    <script>
+      // Save meal to local storage and display it
+      const dayPrefix = "sunday_"; // Set day prefix
+
+      function saveMeal(mealType) {
+        const input = document.getElementById(`${mealType}Input`);
+        const display = document.getElementById(`${mealType}Display`);
+        const value = input.value.trim();
+
+        if (value) {
+          localStorage.setItem(dayPrefix + mealType, value);
+          display.innerHTML = `
+      <span style="font-weight: bold; color: #0012ff; font-style: normal;">You planned: ${value}</span>
+      <button class="edit-btn" onclick="editMeal('${mealType}')">✏️ Edit</button>
+    `;
+          input.value = "";
+        }
+      }
+
+      function editMeal(mealType) {
+        const input = document.getElementById(`${mealType}Input`);
+        const value = localStorage.getItem(dayPrefix + mealType);
+        if (value) {
+          input.value = value;
+        }
+      }
+
+      window.onload = function () {
+        ["breakfast", "lunch", "snack", "dinner"].forEach((meal) => {
+          const savedMeal = localStorage.getItem(dayPrefix + meal);
+          const display = document.getElementById(`${meal}Display`);
+          if (savedMeal) {
+            display.innerHTML = `
+        <span style="font-weight: bold; color: #0012ff; font-style: normal;">You planned: ${savedMeal}</span>
+        <button class="edit-btn" onclick="editMeal('${meal}')">✏️ Edit</button>
+      `;
+          }
+        });
+      };
+
+      function clearMeal(mealType) {
+        localStorage.removeItem(dayPrefix + mealType);
+        const display = document.getElementById(`${mealType}Display`);
+        const input = document.getElementById(`${mealType}Input`);
+        display.innerHTML = "";
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>
